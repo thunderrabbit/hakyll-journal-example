@@ -13,8 +13,11 @@
 
 module Main where
 
-import           Data.Monoid (mappend)
-import           Hakyll
+-- [HP] http://hackage.haskell.org/package/base
+import Data.Monoid (mappend)
+
+-- http://hackage.haskell.org/package/hakyll
+import Hakyll
 
 --------------------------------------------------------------------------------
 -- main
