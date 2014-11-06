@@ -22,7 +22,7 @@ prepare a Hakyll Journal development environment and setup
 2. `$ git clone https://github.com/thunderrabbit/hakyll-journal-example`
 3. `$ cd hakyll-journal-example`
 4. `$ git checkout --track origin/develop`
-5. `$ cabal sandbox init`
+5. `$ cabal sandbox init --sandbox ~/projects/hakyll-journal/.cabal-sandbox`
 6. `$ cabal sandbox add-source ~/projects/hakyll-journal`
 7. `$ cabal install --only-dependencies`
 8. `$ cabal build`
