@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------
 -- |
 --  Module      : Main
---  Description : an example Hakyll Journal site
+--  Description : an example site using Hakyll Journal
 --  Copyright   : (c) 2014, Travis Cardwell and Rob Nugen
 --  License     : MIT
 --  Maintainer  : Travis Cardwell <travis.cardwell@extellisys.com>
