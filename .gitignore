@@ -1,4 +1,6 @@
 # Project
+/_cache/
+/_site/
 /journal
 
 # Haskell
