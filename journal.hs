@@ -11,8 +11,6 @@
 -- journal/diary to your static website.
 ------------------------------------------------------------------------------
 
-{-# LANGUAGE OverloadedStrings #-}
-
 module Main where
 
 import           Data.Monoid (mappend)
