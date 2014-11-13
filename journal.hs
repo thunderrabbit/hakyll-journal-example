@@ -35,14 +35,14 @@ main = hakyll $ do
     match (fromList ["about.md", "contact.md"]) $ do
       route $ setExtension "html"
       compile $ pandocCompiler
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+        >>= loadAndApplyTemplate "templates/base.html" defaultContext
         >>= relativizeUrls
 
     match "posts/*" $ do
       route $ setExtension "html"
       compile $ pandocCompiler
         >>= loadAndApplyTemplate "templates/post.html" postCtx
-        >>= loadAndApplyTemplate "templates/default.html" postCtx
+        >>= loadAndApplyTemplate "templates/base.html" postCtx
         >>= relativizeUrls
 
     create ["archive.html"] $ do
@@ -54,7 +54,7 @@ main = hakyll $ do
                          defaultContext
         makeItem ""
           >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-          >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+          >>= loadAndApplyTemplate "templates/base.html" archiveCtx
           >>= relativizeUrls
 
     match "index.html" $ do
@@ -66,7 +66,7 @@ main = hakyll $ do
                        defaultContext
         getResourceBody
           >>= applyAsTemplate indexCtx
-          >>= loadAndApplyTemplate "templates/default.html" indexCtx
+          >>= loadAndApplyTemplate "templates/base.html" indexCtx
           >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
