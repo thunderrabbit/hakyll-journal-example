@@ -1,56 +1,100 @@
+article, header, footer, main, nav, section {
+	display: block;
+}
+
+html {
+	color: #222;
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
 body {
-    color: black;
-    font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+	background-color: #fff;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 12pt;
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 480px;
+	padding: 0 6px;
 }
 
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+a, a:visited {
+	color: #00e;
+	text-decoration: none;
 }
 
-div#logo a {
-    color: black;
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+a:focus {
+	outline: thin dotted;
 }
 
-div#header #navigation {
-    text-align: right;
-}
-
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 12px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+a:active, a:hover {
+	outline: 0;
+	text-decoration: underline;
 }
 
 h1 {
-    font-size: 24px;
+	font-size: 200%;
+	font-margin: 0.33em 0;
+	font-weight: bold;
 }
 
 h2 {
-    font-size: 20px;
+	font-size: 150%;
+	font-margin: 0.5em 0;
+	font-weight: bold;
+}
+
+h1 a, h1 a:visited, h1 a:active, h1 a:hover,
+h2 a, h2 a:visited, h2 a:active, h2 a:hover {
+	color: #111;
+	text-decoration: none;
+}
+
+#page_header {
+	border-bottom: 2px solid #111;
+	margin-bottom: 2ex;
+}
+
+#page_nav ul {
+	height: 2ex;
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+#page_nav ul li {
+	display: inline;
+}
+
+#page_nav ul li a,
+#page_nav ul li a:visited,
+#page_nav ul li a:active,
+#page_nav ul li a:hover {
+	color: #111;
+	font-weight: bold;
+	padding: 0 1em 0 0.25em;
+	text-decoration: none;
+}
+
+#page_footer {
+	border-top: 2px solid #111;
+	color: #666;
+	font-size: 75%;
+	margin: 2ex 0 1ex 0;
+	padding: 0.5ex 0;
+	text-align: right;
+}
+
+#page_footer a,
+#page_footer a:visited,
+#page_footer a:active,
+#page_footer a:hover {
+	color: #666;
+	text-decoration: none;
 }
 
 div.info {
-    color: #555;
-    font-size: 14px;
-    font-style: italic;
+	color: #555;
+	font-style: italic;
 }
