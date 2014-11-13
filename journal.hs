@@ -62,8 +62,7 @@ main = hakyll $ do
       compile $ do
         posts <- recentFirst =<< loadAll "posts/*"
         let indexCtx = listField "posts" postCtx (return posts) <>
-                       constField "title" "Home" <>
-                       defaultContext
+                       rootCtx
         getResourceBody
           >>= applyAsTemplate indexCtx
           >>= loadAndApplyTemplate "templates/base.html" indexCtx
@@ -73,6 +72,14 @@ main = hakyll $ do
 
 --------------------------------------------------------------------------------
 -- contexts
+
+rootCtx :: Context String
+rootCtx =
+    bodyField "body" <>
+    metadataField <>
+    urlField "url" <>
+    pathField "path" <>
+    missingField
 
 postCtx :: Context String
 postCtx =

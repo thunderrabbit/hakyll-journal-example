@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>$title$ &laquo; Hakyll Journal Example</title>
+		<title>$if(title)$$title$ &laquo; $endif$Hakyll Journal Example</title>
 		<link rel="stylesheet" href="/css/default.css" />
 	</head>
 	<body>
@@ -17,7 +17,7 @@
 			</nav>
 		</header>
 		<main id="page_content">
-			<h1>$title$</h1>
+			$if(title)$<h1>$title$</h1>$endif$
 			$body$
 		</main>
 		<footer id="page_footer">
