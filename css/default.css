@@ -13,7 +13,9 @@ body {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	font-size: 12pt;
 	margin: 0 auto;
-	width: 800px;
+	max-width: 1024px;
+	min-width: 480px;
+	padding: 0 6px;
 }
 
 a, a:visited {
